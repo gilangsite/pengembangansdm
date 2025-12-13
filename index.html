@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gilang Ramadhan Study Resources - Pengembangan SDM - EMBS4318 UTM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -11,8 +15,9 @@
             box-sizing: border-box;
         }
 
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
             background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
             min-height: 100vh;
             padding: 20px;
@@ -32,8 +37,16 @@
         }
 
 
+
+
+
+
+
+
+
         header h1 {
-            font-size: 2.5em;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 4em;
             color: #0a5ba8;
             margin-bottom: 10px;
             font-weight: 600;
@@ -41,13 +54,14 @@
         }
 
 
-        header h1::before {
-            content: "Pengembangan SDM - ";
-        }
+
+
+
 
         header p {
-            font-size: 1em;
-            color: #4a7ba7;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1.6em;
+            color: #0a5ba8;
             font-weight: 400;
         }
 
@@ -78,16 +92,21 @@
             box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.12);
         }
 
+
         .stat-number {
+            font-family: 'DM Sans', sans-serif;
             font-size: 2.5em;
             font-weight: 700;
             color: #0a5ba8;
             margin-bottom: 8px;
         }
 
+
+
         .stat-label {
+            font-family: 'DM Sans', sans-serif;
             font-size: 0.95em;
-            color: #4a7ba7;
+            color: #000000;
             font-weight: 500;
         }
 
@@ -110,11 +129,13 @@
             flex-wrap: wrap;
         }
 
+
         .nav-tabs button {
             padding: 12px 24px;
             border: none;
             background: transparent;
             cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
             font-size: 0.95em;
             font-weight: 500;
             color: #4a7ba7;
@@ -168,24 +189,20 @@
             }
         }
 
+
+
         /* Minggu Cards */
         .minggu-card {
-            background: rgba(255, 255, 255, 0.5);
-            border: 1px solid rgba(255, 255, 255, 0.7);
-            border-radius: 18px;
-            padding: 30px;
             margin-bottom: 25px;
-            border-left: 4px solid #0a5ba8;
-            transition: all 0.3s ease;
         }
 
         .minggu-card:hover {
-            background: rgba(255, 255, 255, 0.6);
-            box-shadow: 0 8px 32px 0 rgba(10, 91, 168, 0.1);
             transform: translateX(5px);
         }
 
+
         .minggu-card h3 {
+            font-family: 'DM Sans', sans-serif;
             color: #0a5ba8;
             margin-bottom: 20px;
             font-size: 1.4em;
@@ -200,7 +217,9 @@
             margin-bottom: 20px;
         }
 
+
         .key-takeaways h4 {
+            font-family: 'DM Sans', sans-serif;
             color: #0a5ba8;
             margin-bottom: 12px;
             font-size: 0.95em;
@@ -209,24 +228,48 @@
             font-weight: 600;
         }
 
+
+
         .key-takeaways p {
+            font-family: 'DM Sans', sans-serif;
             line-height: 1.7;
-            color: #4a7ba7;
+            color: #000000;
+            font-size: 0.95em;
+        }
+
+        .content-text {
+            margin-bottom: 15px;
+        }
+
+
+        .content-text h4 {
+            font-family: 'DM Sans', sans-serif;
+            color: #0a5ba8;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+
+        .content-text p {
+            font-family: 'DM Sans', sans-serif;
+            color: #000000;
+            line-height: 1.7;
             font-size: 0.95em;
         }
 
         .materi-list {
-            background: rgba(255, 255, 255, 0.5);
             list-style: none;
-            padding: 20px;
-            border-radius: 12px;
+            margin: 0;
+            padding: 0;
         }
 
+
+
         .materi-list li {
-            padding: 10px 0;
-            padding-left: 28px;
+            font-family: 'DM Sans', sans-serif;
+            padding: 10px 0 10px 25px;
             position: relative;
-            color: #4a7ba7;
+            color: #000000;
             line-height: 1.6;
             font-size: 0.95em;
         }
@@ -238,6 +281,7 @@
             color: #0a5ba8;
             font-weight: bold;
             font-size: 1.1em;
+            margin-right: 8px;
         }
 
         /* Soal Items */
@@ -255,7 +299,9 @@
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.08);
         }
 
+
         .soal-nomor {
+            font-family: 'DM Sans', sans-serif;
             font-weight: 700;
             color: #0a5ba8;
             margin-bottom: 12px;
@@ -264,7 +310,9 @@
             letter-spacing: 0.5px;
         }
 
+
         .soal-pertanyaan {
+            font-family: 'DM Sans', sans-serif;
             font-weight: 600;
             margin-bottom: 18px;
             color: #1a3a52;
@@ -272,13 +320,16 @@
             font-size: 1em;
         }
 
+
+
         .pilihan {
+            font-family: 'DM Sans', sans-serif;
             margin: 10px 0;
             padding: 12px 16px;
             background: rgba(10, 91, 168, 0.04);
             border: 1px solid rgba(10, 91, 168, 0.1);
             border-radius: 10px;
-            color: #4a7ba7;
+            color: #000000;
             cursor: pointer;
             transition: all 0.2s ease;
             font-size: 0.95em;
@@ -335,7 +386,9 @@
             }
         }
 
+
         .kunci-label {
+            font-family: 'DM Sans', sans-serif;
             font-weight: 700;
             color: #0a5ba8;
             margin-bottom: 10px;
@@ -343,14 +396,19 @@
             font-size: 0.95em;
         }
 
+
+
         .pembahasan-text {
-            color: #4a7ba7;
+            font-family: 'DM Sans', sans-serif;
+            color: #000000;
             line-height: 1.6;
             margin: 10px 0;
             font-size: 0.95em;
         }
 
+
         .toggle-kunci {
+            font-family: 'DM Sans', sans-serif;
             background: linear-gradient(135deg, #0a5ba8 0%, #1a75c4 100%);
             color: white;
             border: none;
@@ -381,13 +439,18 @@
             margin: 20px 0;
         }
 
+
         .info-box strong {
+            font-family: 'DM Sans', sans-serif;
             color: #0a5ba8;
             font-weight: 600;
         }
 
+
+
         .info-box p {
-            color: #4a7ba7;
+            font-family: 'DM Sans', sans-serif;
+            color: #000000;
             line-height: 1.6;
             font-size: 0.95em;
         }
@@ -405,7 +468,9 @@
             box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
         }
 
+
         footer p {
+            font-family: 'DM Sans', sans-serif;
             margin: 8px 0;
             font-size: 0.95em;
         }
@@ -483,9 +548,10 @@
     <div class="container">
         <!-- Header -->
 
+
         <header>
-            <h1>Pengembangan SDM</h1>
-            <p>EMBS4318 Universitas Terbuka Semester 5 | Persiapan UTM</p>
+            <h1>Gilang Study Resource</h1>
+            <p>Pengembangan SDM</p>
         </header>
 
         <!-- Stats -->
@@ -533,16 +599,19 @@
                     </div>
 
 
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Pengenalan PSDM</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;">Pada minggu pertama kamu diperkenalkan bahwa <strong>Pengembangan Sumber Daya Manusia (PSDM) adalah kelanjutan dari Manajemen SDM (MSDM)</strong> yang tidak lagi hanya mengurusi administrasi karyawan, tetapi fokus pada bagaimana organisasi meningkatkan kualitas manusia secara terencana dan berkelanjutan. Di tengah persaingan era industri 4.0, organisasi sangat bergantung pada SDM yang profesional dan kompeten untuk menjaga keunggulan kompetitif, sehingga PSDM diposisikan sebagai strategi kunci, bukan sekadar fungsi pendukung dalam organisasi.</p>
-                        <p style="color: #000000; line-height: 1.7;">PSDM diartikan sebagai <strong>usaha sistematis untuk meningkatkan pengetahuan, keterampilan, sikap, serta kompetensi</strong> agar karyawan mampu menjalankan tugas saat ini sekaligus siap menghadapi tuntutan masa depan. Tujuan utamanya meliputi peningkatan produktivitas, kualitas kerja, adaptasi terhadap perubahan, serta pembentukan kultur kerja yang mendukung pembelajaran berkelanjutan di dalam organisasi.</p>
+
+
+
+                    <div class="content-text">
+                        <h4> Pengenalan PSDM</h4>
+                        <p>Pada minggu pertama kamu diperkenalkan bahwa <strong>Pengembangan Sumber Daya Manusia (PSDM) adalah kelanjutan dari Manajemen SDM (MSDM)</strong> yang tidak lagi hanya mengurusi administrasi karyawan, tetapi fokus pada bagaimana organisasi meningkatkan kualitas manusia secara terencana dan berkelanjutan. Di tengah persaingan era industri 4.0, organisasi sangat bergantung pada SDM yang profesional dan kompeten untuk menjaga keunggulan kompetitif, sehingga PSDM diposisikan sebagai strategi kunci, bukan sekadar fungsi pendukung dalam organisasi.</p>
+                        <p>PSDM diartikan sebagai <strong>usaha sistematis untuk meningkatkan pengetahuan, keterampilan, sikap, serta kompetensi</strong> agar karyawan mampu menjalankan tugas saat ini sekaligus siap menghadapi tuntutan masa depan. Tujuan utamanya meliputi peningkatan produktivitas, kualitas kerja, adaptasi terhadap perubahan, serta pembentukan kultur kerja yang mendukung pembelajaran berkelanjutan di dalam organisasi.</p>
                     </div>
 
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Peran Strategis PSDM dalam Organisasi</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;">Peran strategis PSDM terlihat dari bagaimana ia mengubah potensi individu menjadi kompetensi yang relevan dengan kebutuhan organisasi. Ketika program pengembangan dirancang dengan baik, organisasi dapat meningkatkan produktivitas, kualitas layanan, inovasi, dan pada akhirnya daya saing di pasar yang semakin kompetitif.</p>
-                        <p style="color: #000000; line-height: 1.7;">Dari sisi individu, PSDM memberi kesempatan untuk mengembangkan diri, memperjelas jalur karir, serta meningkatkan rasa percaya diri dan kepuasan kerja. Hal-hal ini kemudian berdampak pada menurunnya turnover karyawan, meningkatnya komitmen, dan terciptanya iklim kerja yang lebih sehat dan produktif. Dengan memahami konsep dasar ini, seluruh topik berikutnya—pelatihan, organisasi belajar, pengembangan karir, hingga evaluasi—dapat dipandang sebagai bagian dari satu sistem pengembangan SDM yang utuh dan saling terkait.</p>
+                    <div class="content-text">
+                        <h4> Peran Strategis PSDM dalam Organisasi</h4>
+                        <p>Peran strategis PSDM terlihat dari bagaimana ia mengubah potensi individu menjadi kompetensi yang relevan dengan kebutuhan organisasi. Ketika program pengembangan dirancang dengan baik, organisasi dapat meningkatkan produktivitas, kualitas layanan, inovasi, dan pada akhirnya daya saing di pasar yang semakin kompetitif.</p>
+                        <p>Dari sisi individu, PSDM memberi kesempatan untuk mengembangkan diri, memperjelas jalur karir, serta meningkatkan rasa percaya diri dan kepuasan kerja. Hal-hal ini kemudian berdampak pada menurunnya turnover karyawan, meningkatnya komitmen, dan terciptanya iklim kerja yang lebih sehat dan produktif. Dengan memahami konsep dasar ini, seluruh topik berikutnya—pelatihan, organisasi belajar, pengembangan karir, hingga evaluasi—dapat dipandang sebagai bagian dari satu sistem pengembangan SDM yang utuh dan saling terkait.</p>
                     </div>
 
                     <h4 style="margin: 25px 0 15px 0; color: #0a5ba8; font-weight: 600;"> Materi Penting yang Harus Dipelajari:</h4>
@@ -574,28 +643,29 @@
                     </div>
 
 
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Dua Cara Pandang dalam PSDM</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;">Minggu kedua membahas cara pandang dasar (paradigma) tentang bagaimana manusia dikembangkan dalam organisasi, yang dibagi ke dalam dua perspektif utama: paradigma pembelajaran dan paradigma kinerja. Kedua paradigma ini memiliki fokus dan asumsi yang berbeda, namun keduanya sama pentingnya dalam membentuk strategi pengembangan SDM yang seimbang dan efektif.</p>
+
+                    <div class="content-text">
+                        <h4> Dua Cara Pandang dalam PSDM</h4>
+                        <p>Minggu kedua membahas cara pandang dasar (paradigma) tentang bagaimana manusia dikembangkan dalam organisasi, yang dibagi ke dalam dua perspektif utama: paradigma pembelajaran dan paradigma kinerja. Kedua paradigma ini memiliki fokus dan asumsi yang berbeda, namun keduanya sama pentingnya dalam membentuk strategi pengembangan SDM yang seimbang dan efektif.</p>
                     </div>
 
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Paradigma Pembelajaran (Learning Paradigm)</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;">Paradigma pembelajaran menekankan bahwa pendidikan, pertumbuhan, dan pengembangan individu merupakan sesuatu yang baik pada dirinya sendiri. Dalam pandangan ini, tujuan utama PSDM adalah memfasilitasi pembelajaran dan pengembangan individu secara utuh, bukan hanya untuk mencapai target organisasi jangka pendek.</p>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;">Asumsi dasar dalam paradigma pembelajaran antara lain: pertumbuhan individu secara inheren baik bagi organisasi, orang harus dinilai sebagai manusia seutuhnya bukan hanya sebagai sumber daya, tujuan utama PSDM adalah pengembangan individu, individu harus mengontrol proses belajarnya sendiri, dan organisasi harus menyediakan sarana kerja yang bermakna untuk mengembangkan potensi penuh.</p>
-                        <p style="color: #000000; line-height: 1.7;">Paradigma ini sejalan dengan prinsip andragogi yang menempatkan orang dewasa sebagai pembelajar mandiri yang termotivasi dari dalam, di mana individu dipandang sebagai subjek yang memiliki otonomi untuk mengelola proses belajarnya.</p>
+                    <div class="content-text">
+                        <h4> Paradigma Pembelajaran (Learning Paradigm)</h4>
+                        <p>Paradigma pembelajaran menekankan bahwa pendidikan, pertumbuhan, dan pengembangan individu merupakan sesuatu yang baik pada dirinya sendiri. Dalam pandangan ini, tujuan utama PSDM adalah memfasilitasi pembelajaran dan pengembangan individu secara utuh, bukan hanya untuk mencapai target organisasi jangka pendek.</p>
+                        <p>Asumsi dasar dalam paradigma pembelajaran antara lain: pertumbuhan individu secara inheren baik bagi organisasi, orang harus dinilai sebagai manusia seutuhnya bukan hanya sebagai sumber daya, tujuan utama PSDM adalah pengembangan individu, individu harus mengontrol proses belajarnya sendiri, dan organisasi harus menyediakan sarana kerja yang bermakna untuk mengembangkan potensi penuh.</p>
+                        <p>Paradigma ini sejalan dengan prinsip andragogi yang menempatkan orang dewasa sebagai pembelajar mandiri yang termotivasi dari dalam, di mana individu dipandang sebagai subjek yang memiliki otonomi untuk mengelola proses belajarnya.</p>
                     </div>
 
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Paradigma Kinerja (Performance Paradigm)</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;">Paradigma kinerja memandang organisasi sebagai sistem yang harus mencapai output dan hasil tertentu, sehingga PSDM diarahkan untuk memperbaiki kinerja sistem kerja dan menyediakan sumber daya yang mendukung pencapaian misi organisasi. Dalam paradigma ini, hasil utama PSDM bukan hanya belajar, tetapi juga peningkatan kinerja yang terukur di tingkat individu maupun sistem organisasi secara keseluruhan.</p>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;">Paradigma kinerja menggunakan pendekatan <strong>Human Performance Technology (HPT)</strong>, yang menggabungkan intervensi belajar (seperti pelatihan) dan intervensi non-belajar (seperti perbaikan sistem, alokasi sumber daya, atau perubahan proses kerja) untuk mencapai performa optimal.</p>
-                        <p style="color: #000000; line-height: 1.7;">Asumsi dasar paradigma kinerja antara lain: kinerja diperlukan untuk bertahan dan berkembang, tujuan akhir PSDM adalah memperbaiki kinerja dan potensi manusia, hasil utama bukan hanya pembelajaran tetapi juga kinerja yang terukur, dan seluruh aktivitas pembelajaran harus terintegrasi dengan sistem kerja aktual.</p>
+                    <div class="content-text">
+                        <h4> Paradigma Kinerja (Performance Paradigm)</h4>
+                        <p>Paradigma kinerja memandang organisasi sebagai sistem yang harus mencapai output dan hasil tertentu, sehingga PSDM diarahkan untuk memperbaiki kinerja sistem kerja dan menyediakan sumber daya yang mendukung pencapaian misi organisasi. Dalam paradigma ini, hasil utama PSDM bukan hanya belajar, tetapi juga peningkatan kinerja yang terukur di tingkat individu maupun sistem organisasi secara keseluruhan.</p>
+                        <p>Paradigma kinerja menggunakan pendekatan <strong>Human Performance Technology (HPT)</strong>, yang menggabungkan intervensi belajar (seperti pelatihan) dan intervensi non-belajar (seperti perbaikan sistem, alokasi sumber daya, atau perubahan proses kerja) untuk mencapai performa optimal.</p>
+                        <p>Asumsi dasar paradigma kinerja antara lain: kinerja diperlukan untuk bertahan dan berkembang, tujuan akhir PSDM adalah memperbaiki kinerja dan potensi manusia, hasil utama bukan hanya pembelajaran tetapi juga kinerja yang terukur, dan seluruh aktivitas pembelajaran harus terintegrasi dengan sistem kerja aktual.</p>
                     </div>
 
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Meta-Teori Pembelajaran</h4>
-                        <p style="color: #000000; line-height: 1.7;">Untuk melengkapi kedua paradigma tersebut, minggu ini juga mengenalkan meta-teori pembelajaran yang menjadi fondasi dalam merancang program pengembangan yang efektif untuk orang dewasa. Teori-teori ini meliputi <strong>behaviorisme</strong> (fokus pada perubahan perilaku), <strong>kognitivisme</strong> (fokus pada proses mental), <strong>humanisme</strong> (fokus pada potensi individu), <strong>belajar sosial</strong> (fokus pada lingkungan dan interaksi), dan <strong>konstruktivisme</strong> (fokus pada pembangunan pengetahuan melalui pengalaman). Pemahaman akan teori-teori ini membantu profesional PSDM merancang intervensi yang tepat sesuai kebutuhan spesifik organisasi dan individu.</p>
+                    <div class="content-text">
+                        <h4> Meta-Teori Pembelajaran</h4>
+                        <p>Untuk melengkapi kedua paradigma tersebut, minggu ini juga mengenalkan meta-teori pembelajaran yang menjadi fondasi dalam merancang program pengembangan yang efektif untuk orang dewasa. Teori-teori ini meliputi <strong>behaviorisme</strong> (fokus pada perubahan perilaku), <strong>kognitivisme</strong> (fokus pada proses mental), <strong>humanisme</strong> (fokus pada potensi individu), <strong>belajar sosial</strong> (fokus pada lingkungan dan interaksi), dan <strong>konstruktivisme</strong> (fokus pada pembangunan pengetahuan melalui pengalaman). Pemahaman akan teori-teori ini membantu profesional PSDM merancang intervensi yang tepat sesuai kebutuhan spesifik organisasi dan individu.</p>
                     </div>
 
                     <h4 style="margin: 25px 0 15px 0; color: #0a5ba8; font-weight: 600;"> Materi Penting yang Harus Dipelajari:</h4>
@@ -627,33 +697,34 @@
                     </div>
 
 
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Sifat Multidisiplin PSDM</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;">Pada minggu ketiga, dijelaskan bahwa <strong>PSDM adalah ilmu yang bersifat multidisiplin</strong> karena meminjam konsep dan teori dari berbagai bidang ilmu, termasuk politik, ekonomi, sosiologi, psikologi, hukum, antropologi, filosofi, sejarah, komunikasi, bahasa, dan seni.</p>
-                        <p style="color: #000000; line-height: 1.7;">Setiap disiplin ilmu menyediakan alat analisis dan kerangka berpikir yang berbeda untuk memahami fenomena SDM, mulai dari budaya kerja, hubungan kerja, psikologi kerja, hukum ketenagakerjaan, hingga kebijakan SDM. Dengan menggabungkan wawasan dari berbagai disiplin ini, PSDM menjadi ilmu yang kaya dan komprehensif dalam menangani kompleksitas pengembangan manusia di organisasi.</p>
+
+                    <div class="content-text">
+                        <h4> Sifat Multidisiplin PSDM</h4>
+                        <p>Pada minggu ketiga, dijelaskan bahwa <strong>PSDM adalah ilmu yang bersifat multidisiplin</strong> karena meminjam konsep dan teori dari berbagai bidang ilmu, termasuk politik, ekonomi, sosiologi, psikologi, hukum, antropologi, filosofi, sejarah, komunikasi, bahasa, dan seni.</p>
+                        <p>Setiap disiplin ilmu menyediakan alat analisis dan kerangka berpikir yang berbeda untuk memahami fenomena SDM, mulai dari budaya kerja, hubungan kerja, psikologi kerja, hukum ketenagakerjaan, hingga kebijakan SDM. Dengan menggabungkan wawasan dari berbagai disiplin ini, PSDM menjadi ilmu yang kaya dan komprehensif dalam menangani kompleksitas pengembangan manusia di organisasi.</p>
                     </div>
 
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;">🏛 Tiga Pilar Teori PSDM</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;">Swanson merangkum inti teori PSDM ke dalam <strong>tiga pilar utama</strong> yang dibingkai dalam perspektif etis: teori ekonomi, teori psikologi, dan teori sistem. Ketiga pilar ini saling melengkapi dan terintegrasi untuk memberikan panduan dalam mengidentifikasi masalah SDM, menerangkan gejala-gejala yang muncul, melakukan proyeksi, serta memberikan solusi terhadap permasalahan SDM di organisasi.</p>
-                        
-                        <div style="margin: 20px 0; padding: 15px; background: rgba(10, 91, 168, 0.05); border-radius: 8px;">
-                            <h5 style="color: #0a5ba8; margin-bottom: 10px; font-weight: 600;"> Teori Ekonomi</h5>
-                            <p style="color: #000000; line-height: 1.6; margin-bottom: 10px;">Menekankan konsep <strong>modal manusia (human capital)</strong>, yang memandang manusia sebagai investasi yang memberikan return atau keuntungan bagi organisasi. Teori kelangkaan sumber daya mengatakan bahwa keputusan PSDM harus menghasilkan nilai tambah optimal dengan sumber daya terbatas dan harus efisien serta efektif.</p>
-                            <p style="color: #000000; line-height: 1.6;">Teori sumber daya berkelanjutan menekankan bahwa sumber daya yang terbatas harus dipertahankan untuk memastikan kelangsungan hidup organisasi dan manusia dalam jangka panjang.</p>
-                        </div>
+                    <div class="content-text">
+                        <h4>🏛 Tiga Pilar Teori PSDM</h4>
+                        <p>Swanson merangkum inti teori PSDM ke dalam <strong>tiga pilar utama</strong> yang dibingkai dalam perspektif etis: teori ekonomi, teori psikologi, dan teori sistem. Ketiga pilar ini saling melengkapi dan terintegrasi untuk memberikan panduan dalam mengidentifikasi masalah SDM, menerangkan gejala-gejala yang muncul, melakukan proyeksi, serta memberikan solusi terhadap permasalahan SDM di organisasi.</p>
+                    </div>
 
-                        <div style="margin: 20px 0; padding: 15px; background: rgba(10, 91, 168, 0.05); border-radius: 8px;">
-                            <h5 style="color: #0a5ba8; margin-bottom: 10px; font-weight: 600;"> Teori Psikologi</h5>
-                            <p style="color: #000000; line-height: 1.6; margin-bottom: 10px;">Menjelaskan bagaimana individu belajar, berperilaku, memaknai pengalaman, dan bagaimana motivasi serta kognisi mempengaruhi kontribusi mereka di tempat kerja.</p>
-                            <p style="color: #000000; line-height: 1.6; margin-bottom: 10px;"><strong>Psikologi Gestalt</strong> menjelaskan bahwa setiap orang memiliki cara unik dalam memaknai pengalaman. <strong>Psikologi Perilaku</strong> fokus pada respon yang dapat diamati, sedangkan <strong>Psikologi Kognitif</strong> menekankan harmonisasi antara tujuan organisasi dengan tujuan individu dalam proses kerja dan kepemimpinan.</p>
-                        </div>
+                    <div class="content-text">
+                        <h5> Teori Ekonomi</h5>
+                        <p>Menekankan konsep <strong>modal manusia (human capital)</strong>, yang memandang manusia sebagai investasi yang memberikan return atau keuntungan bagi organisasi. Teori kelangkaan sumber daya mengatakan bahwa keputusan PSDM harus menghasilkan nilai tambah optimal dengan sumber daya terbatas dan harus efisien serta efektif.</p>
+                        <p>Teori sumber daya berkelanjutan menekankan bahwa sumber daya yang terbatas harus dipertahankan untuk memastikan kelangsungan hidup organisasi dan manusia dalam jangka panjang.</p>
+                    </div>
 
-                        <div style="margin: 20px 0; padding: 15px; background: rgba(10, 91, 168, 0.05); border-radius: 8px;">
-                            <h5 style="color: #0a5ba8; margin-bottom: 10px; font-weight: 600;"> Teori Sistem</h5>
-                            <p style="color: #000000; line-height: 1.6; margin-bottom: 10px;">Melihat organisasi sebagai <strong>sistem terbuka</strong> yang dinamis dan saling terkait. <strong>Teori sistem umum</strong> membedakan antara sistem tertutup (yang berakhir ketika kebutuhan terpenuhi) dan sistem terbuka (yang berkelanjutan dan terus beradaptasi).</p>
-                            <p style="color: #000000; line-height: 1.6; margin-bottom: 10px;"><strong>Teori kekacauan</strong> menekankan bahwa ketidakpastian dan perubahan adalah hal yang wajar, sehingga PSDM harus membantu organisasi memanfaatkan kekacauan sebagai peluang untuk perbaikan. <strong>Teori masa depan</strong> memberikan kebebasan bagi orang-orang dalam berpikir dan memberikan pencerahan bagi organisasi.</p>
-                        </div>
+                    <div class="content-text">
+                        <h5> Teori Psikologi</h5>
+                        <p>Menjelaskan bagaimana individu belajar, berperilaku, memaknai pengalaman, dan bagaimana motivasi serta kognisi mempengaruhi kontribusi mereka di tempat kerja.</p>
+                        <p><strong>Psikologi Gestalt</strong> menjelaskan bahwa setiap orang memiliki cara unik dalam memaknai pengalaman. <strong>Psikologi Perilaku</strong> fokus pada respon yang dapat diamati, sedangkan <strong>Psikologi Kognitif</strong> menekankan harmonisasi antara tujuan organisasi dengan tujuan individu dalam proses kerja dan kepemimpinan.</p>
+                    </div>
+
+                    <div class="content-text">
+                        <h5> Teori Sistem</h5>
+                        <p>Melihat organisasi sebagai <strong>sistem terbuka</strong> yang dinamis dan saling terkait. <strong>Teori sistem umum</strong> membedakan antara sistem tertutup (yang berakhir ketika kebutuhan terpenuhi) dan sistem terbuka (yang berkelanjutan dan terus beradaptasi).</p>
+                        <p><strong>Teori kekacauan</strong> menekankan bahwa ketidakpastian dan perubahan adalah hal yang wajar, sehingga PSDM harus membantu organisasi memanfaatkan kekacauan sebagai peluang untuk perbaikan. <strong>Teori masa depan</strong> memberikan kebebasan bagi orang-orang dalam berpikir dan memberikan pencerahan bagi organisasi.</p>
                     </div>
 
                     <h4 style="margin: 25px 0 15px 0; color: #0a5ba8; font-weight: 600;"> Materi Penting yang Harus Dipelajari:</h4>
@@ -685,28 +756,29 @@
                     </div>
 
 
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Pengertian dan Perbedaan Pelatihan dan Pengembangan</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;">Minggu keempat berfokus pada pelatihan dan pengembangan sebagai instrumen utama PSDM untuk menutup kesenjangan kompetensi. <strong>Pelatihan didefinisikan sebagai proses belajar mengajar dalam waktu relatif singkat</strong>—biasanya beberapa hari hingga beberapa minggu—untuk meningkatkan pengetahuan, sikap, dan keterampilan yang dibutuhkan untuk pekerjaan spesifik yang berjalan saat ini.</p>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;">Pelatihan merupakan proses sistematis untuk mengajarkan pengetahuan dan keahlian tertentu agar karyawan semakin terampil dan mampu melaksanakan tanggung jawab dengan lebih baik sesuai dengan standar yang ditetapkan.</p>
-                        <p style="color: #000000; line-height: 1.7;"><strong>Pengembangan memiliki cakupan lebih luas dan berorientasi jangka panjang</strong> pada kesiapan karir dan peran di masa depan. Pengembangan adalah upaya meningkatkan pengetahuan yang mungkin digunakan segera atau untuk kepentingan masa depan, dilakukan melalui pendekatan terintegrasi yang dirancang untuk mengubah perilaku kerja secara menyeluruh. Fokusnya pada pemenuhan kebutuhan organisasi jangka panjang dan pengembangan manajemen.</p>
+
+                    <div class="content-text">
+                        <h4> Pengertian dan Perbedaan Pelatihan dan Pengembangan</h4>
+                        <p>Minggu keempat berfokus pada pelatihan dan pengembangan sebagai instrumen utama PSDM untuk menutup kesenjangan kompetensi. <strong>Pelatihan didefinisikan sebagai proses belajar mengajar dalam waktu relatif singkat</strong>—biasanya beberapa hari hingga beberapa minggu—untuk meningkatkan pengetahuan, sikap, dan keterampilan yang dibutuhkan untuk pekerjaan spesifik yang berjalan saat ini.</p>
+                        <p>Pelatihan merupakan proses sistematis untuk mengajarkan pengetahuan dan keahlian tertentu agar karyawan semakin terampil dan mampu melaksanakan tanggung jawab dengan lebih baik sesuai dengan standar yang ditetapkan.</p>
+                        <p><strong>Pengembangan memiliki cakupan lebih luas dan berorientasi jangka panjang</strong> pada kesiapan karir dan peran di masa depan. Pengembangan adalah upaya meningkatkan pengetahuan yang mungkin digunakan segera atau untuk kepentingan masa depan, dilakukan melalui pendekatan terintegrasi yang dirancang untuk mengubah perilaku kerja secara menyeluruh. Fokusnya pada pemenuhan kebutuhan organisasi jangka panjang dan pengembangan manajemen.</p>
                     </div>
 
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Manfaat Pelatihan</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;">Pelatihan yang baik diharapkan menghasilkan beberapa manfaat signifikan, antara lain: <strong>memperbaiki performance karyawan</strong> dalam melaksanakan tugas, <strong>meningkatkan motivasi kerja dan semangat kerja</strong>, meningkatkan kemampuan untuk mengatasi stres kerja dan tantangan, <strong>mengembangkan rasa percaya diri dan pengakuan kemampuan diri</strong>, serta menumbuhkan kemandirian dalam bekerja dan pengambilan keputusan.</p>
-                        <p style="color: #000000; line-height: 1.7;">Dengan demikian, investasi dalam pelatihan bukan hanya menguntungkan organisasi tetapi juga memberikan nilai signifikan bagi pengembangan pribadi karyawan.</p>
+                    <div class="content-text">
+                        <h4> Manfaat Pelatihan</h4>
+                        <p>Pelatihan yang baik diharapkan menghasilkan beberapa manfaat signifikan, antara lain: <strong>memperbaiki performance karyawan</strong> dalam melaksanakan tugas, <strong>meningkatkan motivasi kerja dan semangat kerja</strong>, meningkatkan kemampuan untuk mengatasi stres kerja dan tantangan, <strong>mengembangkan rasa percaya diri dan pengakuan kemampuan diri</strong>, serta menumbuhkan kemandirian dalam bekerja dan pengambilan keputusan.</p>
+                        <p>Dengan demikian, investasi dalam pelatihan bukan hanya menguntungkan organisasi tetapi juga memberikan nilai signifikan bagi pengembangan pribadi karyawan.</p>
                     </div>
 
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Program Orientasi</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;">Materi juga mengulas program orientasi sebagai bentuk pelatihan awal bagi karyawan baru agar mereka memahami lingkungan kerja baru dengan cepat. Program orientasi dirancang untuk memberikan <strong>tiga macam informasi utama</strong>: pekerjaan dan rutinitas yang akan dihadapi, sejarah, tujuan, operasi, dan produk/jasa perusahaan, serta kebijakan organisasi, peraturan kerja, dan sistem tunjangan karyawan.</p>
-                        <p style="color: #000000; line-height: 1.7;">Ada dua jenis orientasi yang biasanya dijalankan: <strong>orientasi organisasi</strong> (pengenalan tentang perusahaan secara keseluruhan) dan <strong>orientasi unit kerja</strong> (pengenalan spesifik tentang divisi atau departemen tempat karyawan ditempatkan).</p>
+                    <div class="content-text">
+                        <h4> Program Orientasi</h4>
+                        <p>Materi juga mengulas program orientasi sebagai bentuk pelatihan awal bagi karyawan baru agar mereka memahami lingkungan kerja baru dengan cepat. Program orientasi dirancang untuk memberikan <strong>tiga macam informasi utama</strong>: pekerjaan dan rutinitas yang akan dihadapi, sejarah, tujuan, operasi, dan produk/jasa perusahaan, serta kebijakan organisasi, peraturan kerja, dan sistem tunjangan karyawan.</p>
+                        <p>Ada dua jenis orientasi yang biasanya dijalankan: <strong>orientasi organisasi</strong> (pengenalan tentang perusahaan secara keseluruhan) dan <strong>orientasi unit kerja</strong> (pengenalan spesifik tentang divisi atau departemen tempat karyawan ditempatkan).</p>
                     </div>
 
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Metode Pelatihan</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;">Berbagai metode pelatihan diperkenalkan dan dapat diterapkan sesuai kebutuhan dan konteks pembelajaran:</p>
+                    <div class="content-text">
+                        <h4> Metode Pelatihan</h4>
+                        <p>Berbagai metode pelatihan diperkenalkan dan dapat diterapkan sesuai kebutuhan dan konteks pembelajaran:</p>
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px; margin: 15px 0;">
                             <div style="background: rgba(10, 91, 168, 0.05); padding: 10px; border-radius: 8px;">
                                 <strong style="color: #0a5ba8;"> Metode Tradisional:</strong>
@@ -727,11 +799,11 @@
                         </div>
                     </div>
 
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Pelatihan untuk Supervisor dan Manajer</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;">Untuk supervisor dan manajer, pelatihan difokuskan pada keahlian kepemimpinan dan manajemen karena mereka menjadi kunci keberhasilan implementasi PSDM di lini kerja sehari-hari.</p>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;"><strong>Jenis pelatihan untuk supervisor mencakup</strong>: pemahaman peran dan tanggung jawab, pengawasan dan kepemimpinan, komunikasi dan teamwork, pengelolaan karyawan, peningkatan keterampilan teknis, pengelolaan waktu, perencanaan kerja dan strategi pribadi, pemecahan masalah, dan strategi pemberdayaan bawahan.</p>
-                        <p style="color: #000000; line-height: 1.7;"><strong>Pengembangan manajer eksekutif</strong> difokuskan pada identifikasi pemimpin berbakat, penugasan strategis melalui job rotation, dan pemberian tanggung jawab di luar bidang keahlian untuk membangun pengalaman holistik.</p>
+                    <div class="content-text">
+                        <h4> Pelatihan untuk Supervisor dan Manajer</h4>
+                        <p>Untuk supervisor dan manajer, pelatihan difokuskan pada keahlian kepemimpinan dan manajemen karena mereka menjadi kunci keberhasilan implementasi PSDM di lini kerja sehari-hari.</p>
+                        <p><strong>Jenis pelatihan untuk supervisor mencakup</strong>: pemahaman peran dan tanggung jawab, pengawasan dan kepemimpinan, komunikasi dan teamwork, pengelolaan karyawan, peningkatan keterampilan teknis, pengelolaan waktu, perencanaan kerja dan strategi pribadi, pemecahan masalah, dan strategi pemberdayaan bawahan.</p>
+                        <p><strong>Pengembangan manajer eksekutif</strong> difokuskan pada identifikasi pemimpin berbakat, penugasan strategis melalui job rotation, dan pemberian tanggung jawab di luar bidang keahlian untuk membangun pengalaman holistik.</p>
                     </div>
 
                     <h4 style="margin: 25px 0 15px 0; color: #0a5ba8; font-weight: 600;"> Materi Penting yang Harus Dipelajari:</h4>
@@ -763,51 +835,57 @@
                     </div>
 
 
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Model Kompetensi dan Gunung Es Spencer & Spencer</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;">Pada minggu kelima, fokus beralih ke pengembangan SDM berbasis kompetensi. <strong>Kompetensi didefinisikan sebagai karakteristik dasar individu yang berkaitan secara kausal dengan kinerja unggul</strong>, artinya kompetensi memiliki hubungan sebab-akibat dengan hasil kerja yang superior dalam situasi atau pekerjaan tertentu. Kompetensi mencakup pengetahuan, keterampilan, motif, watak, dan konsep diri.</p>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;"><strong>Model "gunung es" (iceberg model) dari Spencer dan Spencer</strong> menunjukkan bahwa kompetensi memiliki dua bagian: yang tampak di permukaan dan yang tersembunyi. Bagian yang tampak mencakup pengetahuan dan keahlian—ini relatif mudah dikembangkan melalui pelatihan dan pengalaman kerja karena sifatnya teknis dan dapat diajarkan secara langsung.</p>
-                        <p style="color: #000000; line-height: 1.7;">Bagian yang tersembunyi mencakup motif, watak, konsep diri, dan cara berpikir—ini jauh lebih sulit untuk dikembangkan karena berkaitan dengan kepribadian mendalam yang terbentuk sejak lama, namun sangat menentukan perilaku kerja sehari-hari dan kinerja jangka panjang.</p>
+
+                    <div class="content-text">
+                        <h4> Model Kompetensi dan Gunung Es Spencer & Spencer</h4>
+                        <p>Pada minggu kelima, fokus beralih ke pengembangan SDM berbasis kompetensi. <strong>Kompetensi didefinisikan sebagai karakteristik dasar individu yang berkaitan secara kausal dengan kinerja unggul</strong>, artinya kompetensi memiliki hubungan sebab-akibat dengan hasil kerja yang superior dalam situasi atau pekerjaan tertentu. Kompetensi mencakup pengetahuan, keterampilan, motif, watak, dan konsep diri.</p>
+                        <p><strong>Model "gunung es" (iceberg model) dari Spencer dan Spencer</strong> menunjukkan bahwa kompetensi memiliki dua bagian: yang tampak di permukaan dan yang tersembunyi. Bagian yang tampak mencakup pengetahuan dan keahlian—ini relatif mudah dikembangkan melalui pelatihan dan pengalaman kerja karena sifatnya teknis dan dapat diajarkan secara langsung.</p>
+                        <p>Bagian yang tersembunyi mencakup motif, watak, konsep diri, dan cara berpikir—ini jauh lebih sulit untuk dikembangkan karena berkaitan dengan kepribadian mendalam yang terbentuk sejak lama, namun sangat menentukan perilaku kerja sehari-hari dan kinerja jangka panjang.</p>
                     </div>
 
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Standar Kompetensi dan Pengembangan SDM Terpadu</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;"><strong>Standar kompetensi adalah persyaratan atau ukuran yang harus dipenuhi</strong> dalam suatu posisi atau pekerjaan. Persyaratan standar kompetensi meliputi: menunjukkan kinerja individu yang jelas dan terukur, mampu mengelola sejumlah tugas pekerjaan yang berbeda-beda, merespons ketidakberaturan dan mengatasi rutinitas dengan fleksibel, serta memiliki tanggung jawab yang jelas terhadap hasil kerja.</p>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;"><strong>Pengembangan SDM terpadu berbasis kompetensi</strong> terdiri dari lima aspek utama: Manajemen SDM Berbasis Kompetensi (pengambilan keputusan berdasarkan kebutuhan kompetensi), Manajemen SDM Berbasis Talenta (optimasi pengembangan SDM berbakat), Pelatihan Berbasis Kompetensi (fokus pada hasil kerja), Pusat Pelatihan dan Penilaian (penilaian pencapaian kompetensi), dan Pengembangan Profesional Berkelanjutan (umpan balik untuk peningkatan program).</p>
+                    <div class="content-text">
+                        <h4> Standar Kompetensi dan Pengembangan SDM Terpadu</h4>
+                        <p><strong>Standar kompetensi adalah persyaratan atau ukuran yang harus dipenuhi</strong> dalam suatu posisi atau pekerjaan. Persyaratan standar kompetensi meliputi: menunjukkan kinerja individu yang jelas dan terukur, mampu mengelola sejumlah tugas pekerjaan yang berbeda-beda, merespons ketidakberaturan dan mengatasi rutinitas dengan fleksibel, serta memiliki tanggung jawab yang jelas terhadap hasil kerja.</p>
+                        <p><strong>Pengembangan SDM terpadu berbasis kompetensi</strong> terdiri dari lima aspek utama: Manajemen SDM Berbasis Kompetensi (pengambilan keputusan berdasarkan kebutuhan kompetensi), Manajemen SDM Berbasis Talenta (optimasi pengembangan SDM berbakat), Pelatihan Berbasis Kompetensi (fokus pada hasil kerja), Pusat Pelatihan dan Penilaian (penilaian pencapaian kompetensi), dan Pengembangan Profesional Berkelanjutan (umpan balik untuk peningkatan program).</p>
                     </div>
 
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Konsep Organisasi Belajar (Learning Organization)</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;"><strong>Organisasi belajar didefinisikan sebagai suatu disiplin untuk mengembangkan potensi dan kapabilitas individu dalam organisasi</strong>, dikenal juga sebagai "disiplin kelima" yang dikembangkan oleh Peter Senge. Organisasi belajar adalah organisasi yang memfasilitasikan pembelajaran bagi anggotanya dan mentransformasikan hasil belajar tersebut secara sadar dalam konteks organisasi, budaya, dan sistem kerja.</p>
-                        <p style="color: #000000; line-height: 1.7;">Dengan kata lain, organisasi belajar adalah organisasi yang belajar secara kolektif, berkelanjutan, dan terus-menerus sehingga memiliki pengetahuan yang lebih baik untuk mencapai keberhasilan perusahaan dalam persaingan jangka panjang.</p>
+                    <div class="content-text">
+                        <h4> Konsep Organisasi Belajar (Learning Organization)</h4>
+                        <p><strong>Organisasi belajar didefinisikan sebagai suatu disiplin untuk mengembangkan potensi dan kapabilitas individu dalam organisasi</strong>, dikenal juga sebagai "disiplin kelima" yang dikembangkan oleh Peter Senge. Organisasi belajar adalah organisasi yang memfasilitasikan pembelajaran bagi anggotanya dan mentransformasikan hasil belajar tersebut secara sadar dalam konteks organisasi, budaya, dan sistem kerja.</p>
+                        <p>Dengan kata lain, organisasi belajar adalah organisasi yang belajar secara kolektif, berkelanjutan, dan terus-menerus sehingga memiliki pengetahuan yang lebih baik untuk mencapai keberhasilan perusahaan dalam persaingan jangka panjang.</p>
                     </div>
 
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Lima Disiplin Organisasi Belajar</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;">Organisasi belajar dibangun melalui <strong>lima disiplin utama</strong>:</p>
+                    <div class="content-text">
+                        <h4> Lima Disiplin Organisasi Belajar</h4>
+                        <p>Organisasi belajar dibangun melalui <strong>lima disiplin utama</strong>:</p>
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px; margin: 15px 0;">
-                            <div style="background: rgba(10, 91, 168, 0.05); padding: 15px; border-radius: 8px;">
+
+                            <div>
                                 <h5 style="color: #0a5ba8; margin-bottom: 8px; font-weight: 600;"> Berpikir Sistem</h5>
                                 <p style="color: #000000; font-size: 0.9em; line-height: 1.5;">Kemampuan untuk melihat organisasi secara holistik, memahami bagaimana bagian-bagian saling terhubung</p>
                             </div>
-                            <div style="background: rgba(10, 91, 168, 0.05); padding: 15px; border-radius: 8px;">
+
+                            <div>
                                 <h5 style="color: #0a5ba8; margin-bottom: 8px; font-weight: 600;"> Penguasaan Pribadi</h5>
                                 <p style="color: #000000; font-size: 0.9em; line-height: 1.5;">Komitmen individu untuk terus belajar dan mengembangkan diri serta meningkatkan keahlian pribadi</p>
                             </div>
-                            <div style="background: rgba(10, 91, 168, 0.05); padding: 15px; border-radius: 8px;">
+
+                            <div>
                                 <h5 style="color: #0a5ba8; margin-bottom: 8px; font-weight: 600;"> Pola Mental</h5>
                                 <p style="color: #000000; font-size: 0.9em; line-height: 1.5;">Kesadaran dan kemampuan untuk mengenali serta mengubah asumsi dan kepercayaan yang membatasi</p>
                             </div>
-                            <div style="background: rgba(10, 91, 168, 0.05); padding: 15px; border-radius: 8px;">
+
+                            <div>
                                 <h5 style="color: #0a5ba8; margin-bottom: 8px; font-weight: 600;"> Visi Bersama</h5>
                                 <p style="color: #000000; font-size: 0.9em; line-height: 1.5;">Kemampuan mengkomunikasikan tujuan bersama yang menginspirasi komitmen dan tindakan kolektif</p>
                             </div>
-                            <div style="background: rgba(10, 91, 168, 0.05); padding: 15px; border-radius: 8px;">
+
+                            <div>
                                 <h5 style="color: #0a5ba8; margin-bottom: 8px; font-weight: 600;"> Belajar Beregu</h5>
                                 <p style="color: #000000; font-size: 0.9em; line-height: 1.5;">Proses dialog dan kolaborasi dalam tim untuk berbagi pengetahuan dan mencapai hasil optimal</p>
                             </div>
                         </div>
-                        <p style="color: #000000; line-height: 1.7; margin-top: 15px;"><strong>Alasan pentingnya organisasi belajar</strong>: untuk menyiapkan SDM yang mampu menyesuaikan diri dengan perubahan, memenuhi kebutuhan tenaga kerja terdidik dan kompeten, serta mencapai tujuan organisasi melalui pemberdayaan semua komponen dan perbaikan berkelanjutan.</p>
+                        <p><strong>Alasan pentingnya organisasi belajar</strong>: untuk menyiapkan SDM yang mampu menyesuaikan diri dengan perubahan, memenuhi kebutuhan tenaga kerja terdidik dan kompeten, serta mencapai tujuan organisasi melalui pemberdayaan semua komponen dan perbaikan berkelanjutan.</p>
                     </div>
 
                     <h4 style="margin: 25px 0 15px 0; color: #0a5ba8; font-weight: 600;"> Materi Penting yang Harus Dipelajari:</h4>
@@ -839,43 +917,46 @@
                     </div>
 
 
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Strategi Membangun Organisasi Belajar</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;">Minggu keenam membahas bagaimana organisasi belajar diimplementasikan secara praktis. <strong>Implementasi organisasi belajar</strong> melibatkan beberapa strategi konkret: mengembangkan program tindakan belajar yang terstruktur melalui organisasi, meningkatkan kemampuan individu untuk "belajar bagaimana belajar" (learning to learn), mengembangkan disiplin dialog terbuka dalam organisasi, menciptakan rencana pengembangan karir untuk setiap karyawan.</p>
-                        <p style="color: #000000; line-height: 1.7;">Strategi lainnya包括: membangun program pengembangan diri yang holistik, mengembangkan keterampilan belajar beregu (team learning), mendorong penggunaan pemikiran sistemik untuk anticipated tantangan, memperluas pola pikir dan cara belajar yang berbeda-beda, serta mengubah pola mental kolektif organisasi menuju penerimaan pembelajaran berkelanjutan.</p>
+
+                    <div class="content-text">
+                        <h4> Strategi Membangun Organisasi Belajar</h4>
+                        <p>Minggu keenam membahas bagaimana organisasi belajar diimplementasikan secara praktis. <strong>Implementasi organisasi belajar</strong> melibatkan beberapa strategi konkret: mengembangkan program tindakan belajar yang terstruktur melalui organisasi, meningkatkan kemampuan individu untuk "belajar bagaimana belajar" (learning to learn), mengembangkan disiplin dialog terbuka dalam organisasi, menciptakan rencana pengembangan karir untuk setiap karyawan.</p>
+                        <p>Strategi lainnya termasuk: membangun program pengembangan diri yang holistik, mengembangkan keterampilan belajar beregu (team learning), mendorong penggunaan pemikiran sistemik untuk anticipated tantangan, memperluas pola pikir dan cara belajar yang berbeda-beda, serta mengubah pola mental kolektif organisasi menuju penerimaan pembelajaran berkelanjutan.</p>
                     </div>
 
-
-
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Tingkatan Pembelajaran dalam Organisasi</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;">Pembelajaran dipandang berlangsung pada <strong>tiga tingkatan</strong>, yang saling menguatkan dan membentuk satu ekosistem pembelajaran:</p>
+                    <div class="content-text">
+                        <h4> Tingkatan Pembelajaran dalam Organisasi</h4>
+                        <p>Pembelajaran dipandang berlangsung pada <strong>tiga tingkatan</strong>, yang saling menguatkan dan membentuk satu ekosistem pembelajaran:</p>
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin: 15px 0;">
-                            <div style="background: rgba(10, 91, 168, 0.05); padding: 15px; border-radius: 8px;">
+
+                            <div>
                                 <h5 style="color: #0a5ba8; margin-bottom: 8px; font-weight: 600;"> Belajar Individu</h5>
                                 <p style="color: #000000; font-size: 0.9em; line-height: 1.5;">Perubahan mindset, pengetahuan, dan keterampilan pada level personal yang menjadi fondasi pembelajaran organisasi</p>
                             </div>
-                            <div style="background: rgba(10, 91, 168, 0.05); padding: 15px; border-radius: 8px;">
+
+                            <div>
                                 <h5 style="color: #0a5ba8; margin-bottom: 8px; font-weight: 600;"> Belajar Kelompok</h5>
                                 <p style="color: #000000; font-size: 0.9em; line-height: 1.5;">Proses berbagi pengetahuan, diskusi, dan kolaborasi dalam tim atau departemen untuk mencapai pemahaman bersama</p>
                             </div>
-                            <div style="background: rgba(10, 91, 168, 0.05); padding: 15px; border-radius: 8px;">
+
+                            <div>
                                 <h5 style="color: #0a5ba8; margin-bottom: 8px; font-weight: 600;"> Belajar Organisasi</h5>
                                 <p style="color: #000000; font-size: 0.9em; line-height: 1.5;">Pelembagaan pengetahuan menjadi budaya, sistem, prosedur, dan praktik kerja yang diadopsi seluruh organisasi</p>
                             </div>
                         </div>
                     </div>
 
-
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Faktor Kunci Implementasi Organisasi Belajar</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;"><strong>Implementasi organisasi belajar dipengaruhi oleh tiga faktor utama</strong> yang saling terkait dan harus dikelola secara seimbang:</p>
+                    <div class="content-text">
+                        <h4> Faktor Kunci Implementasi Organisasi Belajar</h4>
+                        <p><strong>Implementasi organisasi belajar dipengaruhi oleh tiga faktor utama</strong> yang saling terkait dan harus dikelola secara seimbang:</p>
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin: 15px 0;">
-                            <div style="background: rgba(10, 91, 168, 0.05); padding: 15px; border-radius: 8px;">
+
+                            <div>
                                 <h5 style="color: #0a5ba8; margin-bottom: 8px; font-weight: 600;"> Faktor Belajar</h5>
                                 <p style="color: #000000; font-size: 0.9em; line-height: 1.5;">Peningkatan dalam pengetahuan, inovasi, keyakinan, dan perilaku yang terus berkembang di seluruh organisasi</p>
                             </div>
-                            <div style="background: rgba(10, 91, 168, 0.05); padding: 15px; border-radius: 8px;">
+
+                            <div>
                                 <h5 style="color: #0a5ba8; margin-bottom: 8px; font-weight: 600;"> Faktor Strategi</h5>
                                 <p style="color: #000000; font-size: 0.9em; line-height: 1.5;">Kemampuan organisasi untuk membuat strategi yang sesuai dengan konteks bisnis dan tujuan jangka panjang</p>
                             </div>
@@ -884,16 +965,15 @@
                                 <p style="color: #000000; font-size: 0.9em; line-height: 1.5;">Hasil yang diharapkan dari pembelajaran organisasi, yaitu perbaikan kinerja, peningkatan kompetensi, dan kemampuan adaptasi</p>
                             </div>
                         </div>
-                        <p style="color: #000000; line-height: 1.7;">Ketiga faktor ini harus dikembangkan secara seimbang karena saling mempengaruhi satu sama lain. Tanpa strategi yang jelas, pembelajaran akan tidak terarah. Tanpa inovasi, pembelajaran tidak menghasilkan perubahan yang berarti. Tanpa pembelajaran yang berkelanjutan, strategi akan menjadi usang dan inovasi akan terhambat.</p>
+                        <p>Ketiga faktor ini harus dikembangkan secara seimbang karena saling mempengaruhi satu sama lain. Tanpa strategi yang jelas, pembelajaran akan tidak terarah. Tanpa inovasi, pembelajaran tidak menghasilkan perubahan yang berarti. Tanpa pembelajaran yang berkelanjutan, strategi akan menjadi usang dan inovasi akan terhambat.</p>
                     </div>
 
-
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Perencanaan Karir Individu vs Organisasi</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;"><strong>Pengembangan karir dipahami sebagai hasil interaksi</strong> antara perencanaan karir individu dan manajemen karir organisasi, sehingga kedua pihak memiliki peran dan tanggung jawab yang jelas.</p>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;"><strong>Dari perspektif individu</strong>, perencanaan karir dilakukan untuk meningkatkan status dan posisi, meningkatkan kompensasi dan benefit, serta memastikan keamanan dan kelangsungan pekerjaan. Individu aktif mengenali minat, kekuatan, dan peluang untuk mengembangkan diri sesuai aspirations pribadi.</p>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;"><strong>Dari perspektif organisasi</strong>, perencanaan karir dirancang untuk beberapa tujuan strategis: mengembangkan dan mempromosikan karyawan berbakat dari dalam organisasi, mengurangi kekurangan tenaga kerja yang terampil, meningkatkan produktivitas organisasi, mengurangi tingkat turnover karyawan, menunjukkan bahwa manajer menghargai perkembangan bawahan, serta menciptakan citra rekrutmen yang positif bagi calon karyawan.</p>
-                        <p style="color: #000000; line-height: 1.7;"><strong>Hubungan organisasi belajar dengan pengembangan karir</strong>: organisasi belajar yang sehat akan menjadikan pengembangan karir sebagai bagian integral dari strategi agar karyawan berkembang sekaligus kebutuhan organisasi terpenuhi. Dalam organisasi belajar, jalur karir tidak hanya didasarkan pada promosi ke atas, tetapi juga pada perluasan kompetensi lateral melalui berbagai penugasan, proyek khusus, dan kesempatan pembelajaran.</p>
+                    <div class="content-text">
+                        <h4> Perencanaan Karir Individu vs Organisasi</h4>
+                        <p><strong>Pengembangan karir dipahami sebagai hasil interaksi</strong> antara perencanaan karir individu dan manajemen karir organisasi, sehingga kedua pihak memiliki peran dan tanggung jawab yang jelas.</p>
+                        <p><strong>Dari perspektif individu</strong>, perencanaan karir dilakukan untuk meningkatkan status dan posisi, meningkatkan kompensasi dan benefit, serta memastikan keamanan dan kelangsungan pekerjaan. Individu aktif mengenali minat, kekuatan, dan peluang untuk mengembangkan diri sesuai aspirations pribadi.</p>
+                        <p><strong>Dari perspektif organisasi</strong>, perencanaan karir dirancang untuk beberapa tujuan strategis: mengembangkan dan mempromosikan karyawan berbakat dari dalam organisasi, mengurangi kekurangan tenaga kerja yang terampil, meningkatkan produktivitas organisasi, mengurangi tingkat turnover karyawan, menunjukkan bahwa manajer menghargai perkembangan bawahan, serta menciptakan citra rekrutmen yang positif bagi calon karyawan.</p>
+                        <p><strong>Hubungan organisasi belajar dengan pengembangan karir</strong>: organisasi belajar yang sehat akan menjadikan pengembangan karir sebagai bagian integral dari strategi agar karyawan berkembang sekaligus kebutuhan organisasi terpenuhi. Dalam organisasi belajar, jalur karir tidak hanya didasarkan pada promosi ke atas, tetapi juga pada perluasan kompetensi lateral melalui berbagai penugasan, proyek khusus, dan kesempatan pembelajaran.</p>
                     </div>
 
                     <h4 style="margin: 25px 0 15px 0; color: #0a5ba8; font-weight: 600;"> Materi Penting yang Harus Dipelajari:</h4>
@@ -914,6 +994,7 @@
             </div>
 
 
+
             <!-- Minggu 7 -->
             <div id="minggu7" class="tab-content">
                 <div class="minggu-card">
@@ -924,26 +1005,23 @@
                         <p><strong>Pendalaman konsep pengembangan karir dan kaitannya dengan kinerja karyawan, motivasi kerja, dan pertumbuhan organisasi.</strong> Minggu ini mengintegrasikan semua konsep pengembangan karir dengan praktik manajemen SDM yang nyata dalam organisasi.</p>
                     </div>
 
-
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Tujuan Pengembangan Karir</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;">Minggu ketujuh memperluas pemahaman tentang pengembangan karir sebagai <strong>sistem dan strategi komprehensif</strong> untuk membantu individu mencapai tujuan karir mereka sambil memenuhi kebutuhan organisasi. Pengembangan karir mencakup berbagai aktivitas yang dirancang untuk membantu karyawan memahami dan mengembangkan kemampuan serta aspirasinya, sehingga dapat berkontribusi maksimal bagi organisasi.</p>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;"><strong>Dari perspektif individu</strong>, tujuan pengembangan karir meliputi: membantu karyawan memahami dan menganalisis minat, kekuatan, kelemahan, dan nilai-nilai pribadi; memungkinkan karyawan untuk mengidentifikasi dan mencapai tujuan yang realistis; menyediakan informasi tentang pilihan karir dan persyaratan untuk mencapai karir tersebut; membantu karyawan mengintegrasikan tujuan individu dengan tujuan organisasi; membantu karyawan memahami pilihan serta konsekuensi yang ada dalam keputusan karir.</p>
-                        <p style="color: #000000; line-height: 1.7;"><strong>Dari perspektif organisasi</strong>, tujuan pengembangan karir meliputi: memenuhi kebutuhan organisasi akan tenaga kerja yang terampil dan berkemampuan tinggi; memaksimalkan potensi dan produktivitas karyawan; mengurangi turnover dengan memberikan kepuasan kerja yang tinggi; mengembangkan karyawan untuk memenuhi persyaratan promosi dari dalam organisasi; menciptakan kultur organisasi yang positif dan mendukung pertumbuhan individu.</p>
+                    <div class="content-text">
+                        <h4> Tujuan Pengembangan Karir</h4>
+                        <p>Minggu ketujuh memperluas pemahaman tentang pengembangan karir sebagai <strong>sistem dan strategi komprehensif</strong> untuk membantu individu mencapai tujuan karir mereka sambil memenuhi kebutuhan organisasi. Pengembangan karir mencakup berbagai aktivitas yang dirancang untuk membantu karyawan memahami dan mengembangkan kemampuan serta aspirasinya, sehingga dapat berkontribusi maksimal bagi organisasi.</p>
+                        <p><strong>Dari perspektif individu</strong>, tujuan pengembangan karir meliputi: membantu karyawan memahami dan menganalisis minat, kekuatan, kelemahan, dan nilai-nilai pribadi; memungkinkan karyawan untuk mengidentifikasi dan mencapai tujuan yang realistis; menyediakan informasi tentang pilihan karir dan persyaratan untuk mencapai karir tersebut; membantu karyawan mengintegrasikan tujuan individu dengan tujuan organisasi; membantu karyawan memahami pilihan serta konsekuensi yang ada dalam keputusan karir.</p>
+                        <p><strong>Dari perspektif organisasi</strong>, tujuan pengembangan karir meliputi: memenuhi kebutuhan organisasi akan tenaga kerja yang terampil dan berkemampuan tinggi; memaksimalkan potensi dan produktivitas karyawan; mengurangi turnover dengan memberikan kepuasan kerja yang tinggi; mengembangkan karyawan untuk memenuhi persyaratan promosi dari dalam organisasi; menciptakan kultur organisasi yang positif dan mendukung pertumbuhan individu.</p>
                     </div>
 
-
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Manfaat dan Dampak Pengembangan Karir</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;"><strong>Manfaat pengembangan karir sangat nyata dan terukur</strong>, baik bagi individu maupun organisasi. Untuk individu, pengembangan karir memberikan kepuasan dan motivasi yang tinggi karena mereka merasa dihargai dan memiliki prospek masa depan yang jelas dalam organisasi. Karyawan menjadi lebih loyal dan berdedikasi, serta memiliki rasa memiliki (sense of belonging) yang kuat terhadap organisasi.</p>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;"><strong>Untuk organisasi</strong>, pengembangan karir memberikan beberapa manfaat strategis: meningkatkan produktivitas dan efisiensi kerja karena karyawan yang puas dan termotivasi akan bekerja lebih optimal; mengurangi tingkat turnover sehingga menghemat biaya rekrutmen dan pelatihan karyawan baru; menciptakan image positif sebagai employer yang peduli terhadap karyawan; membangun reputation sebagai organisasi yang bonafide dan profesional; memastikan kesinambungan organisasi melalui pengembangan pemimpin dari dalam.</p>
-                        <p style="color: #000000; line-height: 1.7;"><strong>Hubungan dengan kinerja dan turnover</strong>: pengembangan karir yang baik akan meningkatkan motivasi kerja, yang kemudian berdampak positif pada kinerja. Karyawan yang memiliki jalur karir yang jelas cenderung memiliki komitmen yang lebih tinggi dan mengurangi niat untuk keluar dari organisasi.</p>
+                    <div class="content-text">
+                        <h4> Manfaat dan Dampak Pengembangan Karir</h4>
+                        <p><strong>Manfaat pengembangan karir sangat nyata dan terukur</strong>, baik bagi individu maupun organisasi. Untuk individu, pengembangan karir memberikan kepuasan dan motivasi yang tinggi karena mereka merasa dihargai dan memiliki prospek masa depan yang jelas dalam organisasi. Karyawan menjadi lebih loyal dan berdedikasi, serta memiliki rasa memiliki (sense of belonging) yang kuat terhadap organisasi.</p>
+                        <p><strong>Untuk organisasi</strong>, pengembangan karir memberikan beberapa manfaat strategis: meningkatkan produktivitas dan efisiensi kerja karena karyawan yang puas dan termotivasi akan bekerja lebih optimal; mengurangi tingkat turnover sehingga menghemat biaya rekrutmen dan pelatihan karyawan baru; menciptakan image positif sebagai employer yang peduli terhadap karyawan; membangun reputation sebagai organisasi yang bonafide dan profesional; memastikan kesinambungan organisasi melalui pengembangan pemimpin dari dalam.</p>
+                        <p><strong>Hubungan dengan kinerja dan turnover</strong>: pengembangan karir yang baik akan meningkatkan motivasi kerja, yang kemudian berdampak positif pada kinerja. Karyawan yang memiliki jalur karir yang jelas cenderung memiliki komitmen yang lebih tinggi dan mengurangi niat untuk keluar dari organisasi.</p>
                     </div>
 
-
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Jenis-Jenis Jalur Karir</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;">Pengembangan karir tidak selalu berarti promosi vertikal. <strong>Ada beberapa jenis jalur karir</strong> yang dapat dipilih sesuai dengan preferensi dan kondisi organisasi:</p>
+                    <div class="content-text">
+                        <h4> Jenis-Jenis Jalur Karir</h4>
+                        <p>Pengembangan karir tidak selalu berarti promosi vertikal. <strong>Ada beberapa jenis jalur karir</strong> yang dapat dipilih sesuai dengan preferensi dan kondisi organisasi:</p>
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin: 15px 0;">
                             <div style="background: rgba(10, 91, 168, 0.05); padding: 15px; border-radius: 8px;">
                                 <h5 style="color: #0a5ba8; margin-bottom: 8px; font-weight: 600;"> Jalur Vertikal</h5>
@@ -960,12 +1038,11 @@
                         </div>
                     </div>
 
-
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Sistem Promosi dan Peran Atasan</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;"><strong>Sistem promosi</strong> dapat dibedakan berdasarkan criteria yang digunakan: sistem berbasis <strong>senioritas</strong> (berdasarkan masa kerja), sistem berbasis <strong>merit</strong> (berdasarkan kinerja), atau sistem <strong>kombinasi</strong> yang mempertimbangkan kedua faktor tersebut. Setiap sistem memiliki kelebihan dan kelemahan sendiri.</p>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;"><strong>Peran atasan dalam pengembangan karir bawahan</strong> sangat krusial karena atasan adalah pihak yang paling dekat dengan karyawan dan memahami potensi serta perkembangan mereka sehari-hari. Atasan perlu melakukan: memberikan umpan balik konstruktif tentang kinerja dan potensi bawahan; membantu bawahan mengidentifikasi kekuatan dan area pengembangan; menyediakan kesempatan untuk mengembangkan kompetensi melalui tugas-tugas khusus; menjadi mentor atau coach dalam pengambilan keputusan karir; memberikan rekomendasi yang objektif untuk promosi atau pengembangan; menciptakan iklim yang mendukung pembelajaran dan pertumbuhan.</p>
-                        <p style="color: #000000; line-height: 1.7;">Keberhasilan pengembangan karir sangat bergantung pada <strong>kolaborasi yang baik antara individu, atasan, dan organisasi</strong>. Setiap pihak memiliki peran dan tanggung jawab yang berbeda namun saling melengkapi untuk menciptakan sistem pengembangan karir yang efektif dan berkelanjutan.</p>
+                    <div class="content-text">
+                        <h4> Sistem Promosi dan Peran Atasan</h4>
+                        <p><strong>Sistem promosi</strong> dapat dibedakan berdasarkan criteria yang digunakan: sistem berbasis <strong>senioritas</strong> (berdasarkan masa kerja), sistem berbasis <strong>merit</strong> (berdasarkan kinerja), atau sistem <strong>kombinasi</strong> yang mempertimbangkan kedua faktor tersebut. Setiap sistem memiliki kelebihan dan kelemahan sendiri.</p>
+                        <p><strong>Peran atasan dalam pengembangan karir bawahan</strong> sangat krusial karena atasan adalah pihak yang paling dekat dengan karyawan dan memahami potensi serta perkembangan mereka sehari-hari. Atasan perlu melakukan: memberikan umpan balik konstruktif tentang kinerja dan potensi bawahan; membantu bawahan mengidentifikasi kekuatan dan area pengembangan; menyediakan kesempatan untuk mengembangkan kompetensi melalui tugas-tugas khusus; menjadi mentor atau coach dalam pengambilan keputusan karir; memberikan rekomendasi yang objektif untuk promosi atau pengembangan; menciptakan iklim yang mendukung pembelajaran dan pertumbuhan.</p>
+                        <p>Keberhasilan pengembangan karir sangat bergantung pada <strong>kolaborasi yang baik antara individu, atasan, dan organisasi</strong>. Setiap pihak memiliki peran dan tanggung jawab yang berbeda namun saling melengkapi untuk menciptakan sistem pengembangan karir yang efektif dan berkelanjutan.</p>
                     </div>
 
                     <h4 style="margin: 25px 0 15px 0; color: #0a5ba8; font-weight: 600;"> Materi Penting yang Harus Dipelajari:</h4>
@@ -997,17 +1074,20 @@
                     </div>
 
 
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Konsep dan Tujuan Evaluasi Pengembangan SDM</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;">Minggu terakhir membahas evaluasi sebagai <strong>fungsi kontrol yang penting</strong> dalam siklus Pengembangan SDM. Evaluasi adalah proses sistematis untuk menilai keberhasilan, efektivitas, dan efisiensi program pengembangan yang telah dilaksanakan. Evaluasi tidak hanya dilakukan setelah program selesai, tetapi juga dapat dilakukan selama proses pelaksanaan (formative evaluation) dan setelah program berakhir (summative evaluation).</p>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;"><strong>Tujuan utama evaluasi Pengembangan SDM</strong>: menentukan apakah program yang dilaksanakan sudah mencapai tujuan yang ditetapkan; memberikan informasi untuk perbaikan program di masa depan; mengidentifikasi komponen yang paling efektif dan kurang efektif; mengukur return on investment (ROI) dari program pengembangan; memberikan akuntabilitas kepada stakeholders; menjadi dasar untuk pengambilan keputusan tentang kelanjutan atau penghentian program tertentu.</p>
-                        <p style="color: #000000; line-height: 1.7;"><strong>Fungsi evaluasi untuk organisasi</strong> meliputi: sebagai sistem kontrol kualitas, sebagai umpan balik untuk perbaikan, sebagai justifikasi investasi, sebagai motivator bagi peserta, sebagai informasi strategis, dan sebagai dokumentasi historis program.</p>
+
+                    <div class="content-text">
+                        <h4> Konsep dan Tujuan Evaluasi Pengembangan SDM</h4>
+                        <p>Minggu terakhir membahas evaluasi sebagai <strong>fungsi kontrol yang penting</strong> dalam siklus Pengembangan SDM. Evaluasi adalah proses sistematis untuk menilai keberhasilan, efektivitas, dan efisiensi program pengembangan yang telah dilaksanakan. Evaluasi tidak hanya dilakukan setelah program selesai, tetapi juga dapat dilakukan selama proses pelaksanaan (formative evaluation) dan setelah program berakhir (summative evaluation).</p>
+
+                        <p><strong>Tujuan utama evaluasi Pengembangan SDM</strong>: menentukan apakah program yang dilaksanakan sudah mencapai tujuan yang ditetapkan; memberikan informasi untuk perbaikan program di masa depan; mengidentifikasi komponen yang paling efektif dan kurang efektif; mengukur return on investment (ROI) dari program pengembangan; memberikan akuntabilitas kepada stakeholders; menjadi dasar untuk pengambilan keputusan tentang kelanjutan atau penghentian program tertentu.</p>
+                        <p><strong>Fungsi evaluasi untuk organisasi</strong> meliputi: sebagai sistem kontrol kualitas, sebagai umpan balik untuk perbaikan, sebagai justifikasi investasi, sebagai motivator bagi peserta, sebagai informasi strategis, dan sebagai dokumentasi historis program.</p>
                     </div>
 
 
-                    <div>
-                        <h4 style="color: #0a5ba8; margin-bottom: 15px; font-weight: 600;"> Model Evaluasi Kirkpatrick - 4 Level Evaluasi</h4>
-                        <p style="color: #000000; line-height: 1.7; margin-bottom: 15px;"><strong>Model Kirkpatrick</strong> adalah framework evaluasi yang paling widely used dalam evaluasi pelatihan dan pengembangan SDM. Model ini terdiri dari <strong>empat level evaluasi</strong> yang berurutan, di mana setiap level membangun atas level sebelumnya:</p>
+
+                    <div class="content-text">
+                        <h4> Model Evaluasi Kirkpatrick - 4 Level Evaluasi</h4>
+                        <p><strong>Model Kirkpatrick</strong> adalah framework evaluasi yang paling widely used dalam evaluasi pelatihan dan pengembangan SDM. Model ini terdiri dari <strong>empat level evaluasi</strong> yang berurutan, di mana setiap level membangun atas level sebelumnya:</p>
                         
                         <div style="margin: 20px 0; padding: 15px; background: rgba(10, 91, 168, 0.05); border-radius: 8px;">
                             <h5 style="color: #0a5ba8; margin-bottom: 10px; font-weight: 600;"> Level 1: REACTION (Reaksi)</h5>
